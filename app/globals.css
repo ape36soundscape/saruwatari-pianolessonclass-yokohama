@@ -825,8 +825,19 @@ footer p {
     padding: 38px 30px;
   }
 
+  .method-card h3 {
+    font-size: clamp(1.6rem, 7vw, 1.9rem);
+    white-space: nowrap;
+  }
+
   .teacher-copy {
     padding: 80px 7vw;
+  }
+
+  .contact-copy h2 {
+    font-size: clamp(1.65rem, 7.2vw, 1.9rem);
+    letter-spacing: -0.06em;
+    white-space: nowrap;
   }
 
   .location-card {
