@@ -1,10 +1,42 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const siteUrl =
+  "https://ape36soundscape.github.io/saruwatari-pianolessonclass-yokohama/";
+const title = "猿渡あゆみ ピアノ教室｜横浜・新吉田東";
+const description =
+  "横浜市港北区新吉田東のピアノ教室。年少から大人まで、ピアノと音符ビッツを学べます。入会金無料・無料体験レッスン受付中。";
+
 export const metadata: Metadata = {
-  title: "猿渡あゆみ ピアノ教室｜横浜・新吉田東",
-  description:
-    "横浜市港北区新吉田東のピアノ教室。年少から大人まで、ピアノと音符ビッツを学べます。入会金無料・無料体験レッスン受付中。",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: { canonical: siteUrl },
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    url: siteUrl,
+    title,
+    description,
+    images: [
+      {
+        url: `${siteUrl}og.png`,
+        width: 1731,
+        height: 909,
+        alt: "猿渡あゆみ ピアノ教室｜横浜・新吉田東｜無料体験受付中",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}og.png`],
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#fffafb",
 };
 
 export default function RootLayout({
