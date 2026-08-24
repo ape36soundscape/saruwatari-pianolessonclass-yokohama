@@ -919,7 +919,8 @@ footer p {
   }
 
   .hero h1 {
-    font-size: 28pt;
+    font-size: 23pt;
+    line-height: 1.35;
     margin-bottom: 5mm;
   }
 
