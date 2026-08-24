@@ -404,8 +404,18 @@ nav a:hover {
 }
 
 .fact-card strong {
+  display: block;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+.fact-card small {
+  color: var(--muted);
+  display: block;
+  font-size: 0.72rem;
+  line-height: 1.65;
+  margin-top: 12px;
+  text-wrap: balance;
 }
 
 .method-grid {
@@ -629,6 +639,14 @@ details > p {
 
 .location-card dd {
   margin: 0;
+}
+
+.location-card dd small {
+  color: var(--muted);
+  display: block;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  margin-top: 4px;
 }
 
 footer {

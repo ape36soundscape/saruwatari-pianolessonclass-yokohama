@@ -5,7 +5,7 @@ const siteUrl =
   "https://ape36soundscape.github.io/saruwatari-pianolessonclass-yokohama/";
 const title = "猿渡あゆみ ピアノ教室｜横浜・新吉田東";
 const description =
-  "横浜市港北区新吉田東のピアノ教室。年少から大人まで、ピアノと音符ビッツを学べます。入会金無料・無料体験レッスン受付中。";
+  "横浜市港北区新吉田東のピアノ教室。幼稚園・保育園のお子さまから大学生まで、ピアノと音符ビッツを学べます。その他の年代の方もお気軽にご相談ください。";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
