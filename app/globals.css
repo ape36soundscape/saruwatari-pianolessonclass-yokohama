@@ -367,6 +367,14 @@ nav a:hover {
   margin: 46px 0 0;
 }
 
+.reading-line {
+  display: block;
+}
+
+.reading-line:last-child {
+  padding-left: 1em;
+}
+
 .lesson-section {
   padding: 0 8vw 130px;
 }

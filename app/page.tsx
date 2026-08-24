@@ -125,8 +125,10 @@ export default function Home() {
           </h2>
         </div>
         <p className="intro-copy">
-          はじめて鍵盤にふれるお子さまも、もう一度ピアノを楽しみたい大人の方も。
-          基礎を大切にしながら、毎回の小さな「できた」を積み重ねます。
+          <span className="reading-line">はじめて鍵盤にふれるお子さまも、</span>
+          <span className="reading-line">もう一度ピアノを楽しみたい大人の方も。</span>
+          <span className="reading-line">基礎を大切にしながら、毎回の小さな</span>
+          <span className="reading-line">「できた」を積み重ねます。</span>
         </p>
       </section>
 
@@ -212,6 +214,7 @@ export default function Home() {
           <h2>まずは、無料体験から。</h2>
           <p>
             レッスンの空き状況やご質問も、お気軽にお問い合わせください。
+            <br />
             ショートメールでも受け付けています。
           </p>
           <div className="contact-actions">
