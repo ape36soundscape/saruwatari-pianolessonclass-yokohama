@@ -162,7 +162,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: clamp(2.6rem, 5vw, 5.5rem);
+  font-size: clamp(1.8rem, 3vw, 3.4rem);
   letter-spacing: -0.05em;
   line-height: 1.24;
   margin: 0 0 34px;
@@ -171,9 +171,6 @@ nav a:hover {
 .hero-heading span,
 .teacher-heading span {
   display: block;
-}
-
-.hero-heading span {
   white-space: nowrap;
 }
 
@@ -358,6 +355,10 @@ nav a:hover {
   letter-spacing: -0.05em;
   line-height: 1.35;
   margin: 0;
+}
+
+.teacher-copy h2 {
+  font-size: clamp(2rem, 3vw, 3.4rem);
 }
 
 .intro-copy {
@@ -665,6 +666,10 @@ footer p {
     padding: 90px 8vw;
   }
 
+  .hero h1 {
+    font-size: clamp(2.6rem, 6vw, 4rem);
+  }
+
   .hero-visual {
     min-height: 610px;
   }
@@ -690,6 +695,10 @@ footer p {
   .teacher-art {
     aspect-ratio: 3 / 2;
     min-height: 0;
+  }
+
+  .teacher-copy h2 {
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
   }
 
   footer {
