@@ -73,10 +73,9 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">横浜・新吉田東のピアノ教室</p>
-          <h1>
-            音を読むよろこびから、
-            <br />
-            奏でるたのしさへ。
+          <h1 className="balanced-heading hero-heading">
+            <span>音を読むよろこびから、</span>
+            <span>奏でるたのしさへ。</span>
           </h1>
           <p className="hero-lead">
             年少のお子さまから大人の方まで。
@@ -120,7 +119,10 @@ export default function Home() {
         <p className="intro-number">01</p>
         <div>
           <p className="section-label">LESSON</p>
-          <h2>自分のペースで、音楽と仲良くなる。</h2>
+          <h2 className="balanced-heading intro-heading">
+            <span>自分のペースで、</span>
+            <span>音楽と仲良くなる。</span>
+          </h2>
         </div>
         <p className="intro-copy">
           はじめて鍵盤にふれるお子さまも、もう一度ピアノを楽しみたい大人の方も。
@@ -171,7 +173,10 @@ export default function Home() {
         </div>
         <div className="teacher-copy">
           <p className="section-label">TEACHER</p>
-          <h2>はじめまして。<br />講師の猿渡あゆみです。</h2>
+          <h2 className="balanced-heading teacher-heading">
+            <span>はじめまして。</span>
+            <span>講師の猿渡あゆみです。</span>
+          </h2>
           <p className="teacher-credential">国立音楽大学 ピアノ教育学科 卒業</p>
           <p>
             音楽は、できるようになる過程にもたくさんの楽しさがあります。
