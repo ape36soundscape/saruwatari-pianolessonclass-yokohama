@@ -404,7 +404,7 @@ nav a:hover {
 
 .teacher-art {
   align-items: center;
-  background: linear-gradient(155deg, #ce7696, #9b74aa);
+  background: #cb625a;
   display: flex;
   justify-content: center;
   min-height: 590px;
@@ -412,21 +412,11 @@ nav a:hover {
   position: relative;
 }
 
-.portrait-initial {
-  color: rgba(255, 255, 255, 0.92);
-  font-family: "Times New Roman", serif;
-  font-size: clamp(14rem, 30vw, 27rem);
-  font-style: italic;
-  line-height: 0.8;
-}
-
-.portrait-note {
-  bottom: 9%;
-  color: var(--ink);
-  font-family: serif;
-  font-size: 5rem;
-  position: absolute;
-  right: 12%;
+.teacher-illustration {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 .teacher-copy {
@@ -649,7 +639,8 @@ footer p {
   }
 
   .teacher-art {
-    min-height: 450px;
+    aspect-ratio: 3 / 2;
+    min-height: 0;
   }
 
   footer {

@@ -129,9 +129,13 @@ export default function Home() {
       </section>
 
       <section className="teacher-section" id="teacher">
-        <div className="teacher-art" aria-hidden="true">
-          <span className="portrait-initial">A</span>
-          <span className="portrait-note">♪</span>
+        <div className="teacher-art">
+          <img
+            className="teacher-illustration"
+            src="grand-piano-illustration.png"
+            alt="黒いグランドピアノのイラスト"
+            loading="lazy"
+          />
         </div>
         <div className="teacher-copy">
           <p className="section-label">TEACHER</p>
@@ -205,7 +209,7 @@ export default function Home() {
           <span>猿渡あゆみ ピアノ教室</span>
         </div>
         <p>横浜市港北区 新吉田東4丁目</p>
-        <p>© {new Date().getFullYear()} Ayumi Sawatari Piano Class</p>
+        <p>© {new Date().getFullYear()} Ayumi Saruwatari Piano Class</p>
       </footer>
     </main>
   );
