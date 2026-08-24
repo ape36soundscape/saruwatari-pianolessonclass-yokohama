@@ -175,7 +175,8 @@ nav a:hover {
 }
 
 .intro-heading span {
-  display: inline;
+  display: block;
+  white-space: nowrap;
 }
 
 .hero-lead {
