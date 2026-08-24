@@ -40,6 +40,8 @@ next-env.d.ts
 /.wrangler/
 /.npm-cache/
 /outputs/
+/output/
+/tmp/
 /work/
 
 # OpenAI Sites deployment metadata stays local when mirroring to GitHub Pages.

@@ -1,3 +1,5 @@
+import PrintButton from "./PrintButton";
+
 const lessonFacts = [
   { label: "対象", value: "年少〜大人" },
   { label: "回数", value: "月3〜4回" },
@@ -23,9 +25,38 @@ const faqs = [
   },
 ];
 
+function ProofNotes({ label, pageBreak = true }: { label: string; pageBreak?: boolean }) {
+  return (
+    <aside className={`proof-notes print-only${pageBreak ? " print-break" : ""}`}>
+      <p>{label}</p>
+      <div aria-hidden="true" />
+    </aside>
+  );
+}
+
 export default function Home() {
   return (
     <main>
+      <section className="print-proof-header print-only">
+        <div>
+          <p>WEBSITE PROOF</p>
+          <h1>猿渡あゆみ ピアノ教室　校正用プリント</h1>
+        </div>
+        <dl>
+          <div>
+            <dt>校正日</dt>
+            <dd>　　　　年　　　月　　　日</dd>
+          </div>
+          <div>
+            <dt>校正者</dt>
+            <dd>　　　　　　　　　　　　</dd>
+          </div>
+        </dl>
+        <p className="print-url">
+          https://ape36soundscape.github.io/saruwatari-pianolessonclass-yokohama/
+        </p>
+      </section>
+
       <header className="site-header">
         <a className="brand" href="#top" aria-label="猿渡あゆみピアノ教室 ホーム">
           <span className="brand-mark" aria-hidden="true">♪</span>
@@ -83,6 +114,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ProofNotes label="トップ・見出しの修正メモ" />
 
       <section className="intro" aria-label="教室の特徴">
         <p className="intro-number">01</p>
@@ -127,6 +159,7 @@ export default function Home() {
           </article>
         </div>
       </section>
+      <ProofNotes label="レッスン内容・料金の修正メモ" />
 
       <section className="teacher-section" id="teacher">
         <div className="teacher-art">
@@ -134,7 +167,6 @@ export default function Home() {
             className="teacher-illustration"
             src="grand-piano-illustration.png"
             alt="黒いグランドピアノのイラスト"
-            loading="lazy"
           />
         </div>
         <div className="teacher-copy">
@@ -167,6 +199,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <ProofNotes label="講師紹介・よくある質問の修正メモ" />
 
       <section className="contact-section" id="access">
         <div className="contact-copy">
@@ -202,6 +235,7 @@ export default function Home() {
           </dl>
         </div>
       </section>
+      <ProofNotes label="連絡先・所在地・その他の修正メモ" pageBreak={false} />
 
       <footer>
         <div className="footer-brand">
@@ -211,6 +245,7 @@ export default function Home() {
         <p>横浜市港北区 新吉田東4丁目</p>
         <p>© {new Date().getFullYear()} Ayumi Saruwatari Piano Class</p>
       </footer>
+      <PrintButton />
     </main>
   );
 }

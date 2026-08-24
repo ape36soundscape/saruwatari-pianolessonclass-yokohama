@@ -33,6 +33,42 @@ a {
   text-decoration: none;
 }
 
+.print-only {
+  display: none;
+}
+
+.print-trigger {
+  align-items: center;
+  background: var(--ink);
+  border: 0;
+  border-radius: 999px;
+  bottom: 22px;
+  box-shadow: 0 12px 32px rgba(73, 54, 66, 0.24);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 8px;
+  letter-spacing: 0.06em;
+  padding: 13px 19px;
+  position: fixed;
+  right: 22px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 30;
+}
+
+.print-trigger:hover {
+  background: var(--rose-deep);
+  transform: translateY(-2px);
+}
+
+.print-trigger:focus-visible {
+  outline: 3px solid var(--blush);
+  outline-offset: 3px;
+}
+
 .site-header {
   align-items: center;
   background: rgba(255, 250, 251, 0.94);
@@ -777,5 +813,353 @@ footer p {
   *::before,
   *::after {
     transition: none !important;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 12mm 14mm 15mm;
+}
+
+@media print {
+  :root {
+    --ink: #382c33;
+    --line: rgba(56, 44, 51, 0.24);
+  }
+
+  html {
+    font-size: 10pt;
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #fff;
+    color: var(--ink);
+    line-height: 1.65;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  .site-header,
+  .print-trigger {
+    display: none !important;
+  }
+
+  .print-proof-header {
+    align-items: start;
+    border-bottom: 1.5px solid var(--ink);
+    display: grid;
+    gap: 3mm 8mm;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 6mm;
+    padding-bottom: 4mm;
+  }
+
+  .print-proof-header > div > p {
+    color: var(--rose);
+    font-size: 7pt;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    margin: 0 0 1mm;
+  }
+
+  .print-proof-header h1 {
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 15pt;
+    margin: 0;
+  }
+
+  .print-proof-header dl {
+    font-size: 8pt;
+    margin: 0;
+  }
+
+  .print-proof-header dl div {
+    display: grid;
+    gap: 3mm;
+    grid-template-columns: auto 1fr;
+  }
+
+  .print-proof-header dt {
+    font-weight: 700;
+  }
+
+  .print-proof-header dd {
+    border-bottom: 1px solid var(--line);
+    margin: 0;
+  }
+
+  .print-url {
+    color: var(--muted);
+    font-size: 6.5pt;
+    grid-column: 1 / -1;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .hero {
+    grid-template-columns: 1.08fr 0.92fr;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .hero-copy {
+    max-width: none;
+    padding: 10mm 7mm 7mm 0;
+  }
+
+  .eyebrow,
+  .section-label {
+    font-size: 6.5pt;
+    margin-bottom: 3mm;
+  }
+
+  .hero h1 {
+    font-size: 28pt;
+    margin-bottom: 5mm;
+  }
+
+  .hero-lead {
+    font-size: 9pt;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    margin-top: 6mm;
+  }
+
+  .primary {
+    min-width: 0;
+    padding: 3mm 5mm;
+  }
+
+  .text-link {
+    display: none;
+  }
+
+  .small-note {
+    font-size: 6.5pt;
+    margin-top: 2mm;
+  }
+
+  .hero-visual {
+    min-height: 0;
+    height: 112mm;
+  }
+
+  .hero-visual::before {
+    height: 70mm;
+    width: 70mm;
+  }
+
+  .music-card {
+    height: 47mm;
+    width: 52mm;
+  }
+
+  .music-card strong {
+    font-size: 23pt;
+  }
+
+  .note-one {
+    font-size: 30pt;
+  }
+
+  .note-two {
+    font-size: 23pt;
+  }
+
+  .piano {
+    height: 21mm;
+  }
+
+  .black-key {
+    height: 13mm;
+  }
+
+  .intro {
+    gap: 5mm;
+    grid-template-columns: 0.85fr 1.15fr;
+    padding: 9mm 7mm;
+  }
+
+  .intro-number {
+    display: none;
+  }
+
+  .intro h2,
+  .teacher-copy h2,
+  .faq-heading h2,
+  .contact-copy h2 {
+    font-size: 20pt;
+  }
+
+  .intro-copy {
+    line-height: 1.8;
+    margin-top: 7mm;
+  }
+
+  .lesson-section {
+    padding: 0 0 5mm;
+  }
+
+  .fact-card {
+    padding: 5mm;
+  }
+
+  .fact-card strong {
+    font-size: 13pt;
+  }
+
+  .method-grid {
+    gap: 4mm;
+    margin-top: 8mm;
+  }
+
+  .method-card {
+    min-height: 0;
+    padding: 7mm;
+  }
+
+  .method-icon {
+    font-size: 27pt;
+    margin: 4mm 0 2mm;
+  }
+
+  .method-card h3 {
+    font-size: 15pt;
+    margin-bottom: 2mm;
+  }
+
+  .method-card p:last-child {
+    line-height: 1.7;
+  }
+
+  .teacher-section {
+    break-inside: avoid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .teacher-art {
+    aspect-ratio: auto;
+    min-height: 86mm;
+  }
+
+  .teacher-copy {
+    padding: 8mm;
+  }
+
+  .teacher-credential {
+    margin: 5mm 0 4mm;
+    padding-bottom: 3mm;
+  }
+
+  .teacher-copy > p:last-child {
+    line-height: 1.75;
+  }
+
+  .faq-section {
+    gap: 8mm;
+    grid-template-columns: 0.7fr 1.3fr;
+    padding: 9mm 0 5mm;
+  }
+
+  summary {
+    gap: 3mm;
+    padding: 3mm 0;
+  }
+
+  .faq-plus {
+    display: none;
+  }
+
+  details:not([open]) > *:not(summary) {
+    display: block;
+  }
+
+  details > p {
+    font-size: 8pt;
+    line-height: 1.65;
+    margin: 0 0 3mm 8mm;
+  }
+
+  .contact-section {
+    gap: 8mm;
+    grid-template-columns: 1.05fr 0.95fr;
+    padding: 10mm;
+  }
+
+  .contact-copy > p:not(.section-label) {
+    margin-top: 4mm;
+  }
+
+  .contact-actions {
+    gap: 4mm;
+    margin-top: 5mm;
+  }
+
+  .contact-button {
+    font-size: 12pt;
+    padding: 3mm 5mm;
+  }
+
+  .location-card {
+    padding: 6mm;
+  }
+
+  .location-card h3 {
+    font-size: 15pt;
+    margin: 2mm 0 5mm;
+  }
+
+  .location-card dl div {
+    font-size: 8pt;
+    padding: 2mm 0;
+  }
+
+  .proof-notes {
+    break-inside: avoid;
+    height: 31mm;
+    margin: 5mm 0 0;
+  }
+
+  .proof-notes p {
+    color: var(--rose-deep);
+    font-size: 7pt;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    margin: 0 0 2mm;
+  }
+
+  .proof-notes div {
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 7mm,
+      var(--line) 7mm,
+      var(--line) calc(7mm + 1px)
+    );
+    border-top: 1px solid var(--line);
+    height: 25mm;
+  }
+
+  .print-break {
+    break-after: page;
+  }
+
+  footer {
+    gap: 3mm;
+    grid-template-columns: 1fr auto auto;
+    margin-top: 6mm;
+    padding: 5mm 7mm;
+  }
+
+  a[href^="tel:"],
+  a[href^="sms:"] {
+    text-decoration: none;
   }
 }
