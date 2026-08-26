@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description,
+  verification: {
+    google: "KtbsyYZ54aSKXF6a8I-vG8UjqKtoFt2LHMFoJR8sFgU",
+  },
   alternates: { canonical: siteUrl },
   openGraph: {
     type: "website",
