@@ -676,6 +676,96 @@ footer p {
   margin: 0;
 }
 
+.footer-info {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+}
+
+.footer-info a {
+  color: rgba(255, 255, 255, 0.78);
+  text-underline-offset: 3px;
+}
+
+.privacy-page {
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.privacy-header {
+  border-bottom: 1px solid var(--line);
+  padding: 24px 8vw;
+}
+
+.privacy-header a {
+  color: var(--ink);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.privacy-header span {
+  color: var(--accent);
+  margin-right: 9px;
+}
+
+.privacy-content {
+  margin: 0 auto;
+  max-width: 880px;
+  padding: 80px 7vw 110px;
+}
+
+.privacy-content h1 {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(2.1rem, 5vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin: 14px 0 28px;
+}
+
+.privacy-lead {
+  font-size: 1.04rem;
+  line-height: 2;
+  margin-bottom: 58px;
+}
+
+.privacy-content section {
+  border-top: 1px solid var(--line);
+  padding: 34px 0 26px;
+}
+
+.privacy-content h2 {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 1.35rem;
+  margin: 0 0 16px;
+}
+
+.privacy-content p,
+.privacy-content li {
+  line-height: 1.95;
+}
+
+.privacy-content ul {
+  padding-left: 1.4em;
+}
+
+.privacy-content a {
+  color: var(--accent-dark);
+}
+
+.privacy-updated {
+  color: var(--muted);
+  font-size: 0.86rem;
+  margin-top: 38px;
+}
+
+.privacy-back {
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
 @media (max-width: 980px) {
   .site-header {
     grid-template-columns: 1fr auto;
@@ -731,6 +821,11 @@ footer p {
   footer {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 8px;
   }
 }
 

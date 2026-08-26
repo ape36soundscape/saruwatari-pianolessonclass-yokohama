@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
+import GoogleAnalytics from "./GoogleAnalytics";
 import "./globals.css";
 
+const isFirebaseHosting = process.env.FIREBASE_HOSTING === "true";
 const siteUrl =
-  process.env.FIREBASE_HOSTING === "true"
+  isFirebaseHosting
     ? "https://ayumi-piano-yokohama.web.app/"
     : "https://ape36soundscape.github.io/saruwatari-pianolessonclass-yokohama/";
 const title = "猿渡あゆみ ピアノ教室｜横浜・新吉田東";
@@ -51,7 +53,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        {children}
+        {isFirebaseHosting && <GoogleAnalytics />}
+      </body>
     </html>
   );
 }

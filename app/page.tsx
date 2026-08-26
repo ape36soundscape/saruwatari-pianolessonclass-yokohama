@@ -258,7 +258,10 @@ export default function Home() {
           <span aria-hidden="true">♪</span>
           <span>猿渡あゆみ ピアノ教室</span>
         </div>
-        <p>横浜市港北区 新吉田東4丁目</p>
+        <p className="footer-info">
+          <span>横浜市港北区 新吉田東4丁目</span>
+          <a href="privacy/">プライバシーポリシー</a>
+        </p>
         <p>© {new Date().getFullYear()} Ayumi Saruwatari Piano Class</p>
       </footer>
       <PrintButton />
