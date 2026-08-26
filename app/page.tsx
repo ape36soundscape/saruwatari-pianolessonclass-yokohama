@@ -7,7 +7,7 @@ const lessonFacts = [
     note: "幼稚園・保育園／小・中・高校生／大学生　そのほかもご相談ください",
   },
   { label: "回数", value: "月3〜4回" },
-  { label: "月謝", value: "6,000〜8,000円" },
+  { label: "月謝", value: "詳しくはお問い合わせください" },
   { label: "入会金", value: "無料" },
 ];
 
