@@ -46,7 +46,8 @@ a {
   box-shadow: 0 12px 32px rgba(73, 54, 66, 0.24);
   color: #fff;
   cursor: pointer;
-  display: inline-flex;
+  /* 校正用の機能は残し、公開画面では一時的に非表示にする。 */
+  display: none;
   font: inherit;
   font-size: 0.78rem;
   font-weight: 700;
