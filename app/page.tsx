@@ -7,7 +7,7 @@ const lessonFacts = [
     note: "幼稚園・保育園／小・中・高校生／大学生　そのほかもご相談ください",
   },
   { label: "回数", value: "月3〜4回" },
-  { label: "月謝", value: "詳しくはお問い合わせください" },
+  { label: "月謝", value: "6,000〜8,000円" },
   { label: "入会金", value: "無料" },
 ];
 
@@ -184,7 +184,7 @@ export default function Home() {
             <span>はじめまして。</span>
             <span>講師の猿渡あゆみです。</span>
           </h2>
-          <p className="teacher-credential">国立音楽大学 ピアノ教育学科 卒業</p>
+          <p className="teacher-credential">国立音楽大学 音楽教育学科 卒業</p>
           <p>
             音楽は、できるようになる過程にもたくさんの楽しさがあります。
             一人ひとりの個性とペースを大切に、安心して通えるレッスンを心がけています。
