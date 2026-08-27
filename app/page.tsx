@@ -44,7 +44,7 @@ export default function Home() {
       <section className="print-proof-header print-only">
         <div>
           <p>WEBSITE PROOF</p>
-          <h1>猿渡あゆみ ピアノ教室　校正用プリント</h1>
+          <h1>猿渡ピアノ教室　校正用プリント</h1>
         </div>
         <dl>
           <div>
@@ -62,9 +62,9 @@ export default function Home() {
       </section>
 
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="猿渡あゆみピアノ教室 ホーム">
+        <a className="brand" href="#top" aria-label="猿渡ピアノ教室 ホーム">
           <span className="brand-mark" aria-hidden="true">♪</span>
-          <span>猿渡あゆみ ピアノ教室</span>
+          <span>猿渡ピアノ教室</span>
         </a>
         <nav aria-label="メインメニュー">
           <a href="#lesson">レッスン</a>
@@ -231,7 +231,7 @@ export default function Home() {
         </div>
         <div className="location-card">
           <p className="location-label">PIANO CLASS</p>
-          <h3>猿渡あゆみ<br />ピアノ教室</h3>
+          <h3>猿渡ピアノ教室</h3>
           <dl>
             <div>
               <dt>所在地</dt>
@@ -256,7 +256,7 @@ export default function Home() {
       <footer>
         <div className="footer-brand">
           <span aria-hidden="true">♪</span>
-          <span>猿渡あゆみ ピアノ教室</span>
+          <span>猿渡ピアノ教室</span>
         </div>
         <p className="footer-info">
           <span>横浜市港北区 新吉田東4丁目</span>

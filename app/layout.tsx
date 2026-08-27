@@ -7,7 +7,7 @@ const siteUrl =
   isFirebaseHosting
     ? "https://ayumi-piano-yokohama.web.app/"
     : "https://ape36soundscape.github.io/saruwatari-pianolessonclass-yokohama/";
-const title = "猿渡あゆみ ピアノ教室｜横浜・新吉田東";
+const title = "猿渡ピアノ教室｜横浜・新吉田東";
 const description =
   "横浜市港北区新吉田東のピアノ教室。幼稚園・保育園のお子さまから大学生まで、ピアノと音符ビッツを学べます。その他の年代の方もお気軽にご相談ください。";
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: `${siteUrl}og.png`,
         width: 1731,
         height: 909,
-        alt: "猿渡あゆみ ピアノ教室｜横浜・新吉田東｜無料体験受付中",
+        alt: "猿渡ピアノ教室｜横浜・新吉田東｜無料体験受付中",
       },
     ],
   },

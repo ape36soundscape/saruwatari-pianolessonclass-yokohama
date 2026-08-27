@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 const siteUrl = "https://ayumi-piano-yokohama.web.app";
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー｜猿渡あゆみ ピアノ教室",
+  title: "プライバシーポリシー｜猿渡ピアノ教室",
   description:
-    "猿渡あゆみ ピアノ教室ウェブサイトにおける、個人情報とアクセス情報の取扱いについてご案内します。",
+    "猿渡ピアノ教室ウェブサイトにおける、個人情報とアクセス情報の取扱いについてご案内します。",
   alternates: { canonical: `${siteUrl}/privacy/` },
 };
 
@@ -13,9 +13,9 @@ export default function PrivacyPolicy() {
   return (
     <main className="privacy-page">
       <header className="privacy-header">
-        <a href="../" aria-label="猿渡あゆみピアノ教室のホームへ戻る">
+        <a href="../" aria-label="猿渡ピアノ教室のホームへ戻る">
           <span aria-hidden="true">♪</span>
-          猿渡あゆみ ピアノ教室
+          猿渡ピアノ教室
         </a>
       </header>
 
@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
         <p className="section-label">PRIVACY POLICY</p>
         <h1>プライバシーポリシー</h1>
         <p className="privacy-lead">
-          猿渡あゆみ ピアノ教室（以下「当教室」）は、本ウェブサイトをご利用になる方の情報を、
+          猿渡ピアノ教室（以下「当教室」）は、本ウェブサイトをご利用になる方の情報を、
           次のとおり取り扱います。
         </p>
 
