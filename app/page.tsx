@@ -262,7 +262,7 @@ export default function Home() {
           <span>横浜市港北区 新吉田東4丁目</span>
           <a href="privacy/">プライバシーポリシー</a>
         </p>
-        <p>© {new Date().getFullYear()} Ayumi Saruwatari Piano Class</p>
+        <p>© 2026 Saruwatari Piano Class</p>
       </footer>
       <PrintButton />
     </main>
