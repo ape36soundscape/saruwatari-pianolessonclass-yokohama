@@ -1,0 +1,37 @@
+猿渡ピアノ教室　ホームページ引き継ぎメモ
+最終更新：2026年8月29日
+
+■ 公開中のホームページ
+https://ape36soundscape.github.io/saruwatari-pianolessonclass-yokohama/
+
+上記のURLは、スマートフォン・パソコンのどちらからでも閲覧できます。
+
+■ 公開のしくみ
+・ホームページのデータは GitHub の次のリポジトリで管理しています。
+  https://github.com/ape36soundscape/saruwatari-pianolessonclass-yokohama
+・main ブランチの内容が更新されると、GitHub Pages が自動で公開サイトを更新します。
+・編集・公開の中心は GitHub Pages です。
+
+■ 現在の公開内容
+・教室名：猿渡ピアノ教室
+・学歴表記：国立音楽大学 音楽教育学科 卒業
+・月謝表記：6,000〜8,000円
+・フッター表記：© 2026 Saruwatari Piano Class
+
+■ Firebase について
+Firebase のURL（https://ayumi-piano-yokohama.web.app/）は現在非公開です。
+公開されている正しいURLは、上記の GitHub Pages URL です。
+
+■ 他の端末で編集を続ける方法
+1. GitHub に同じアカウントでログインします。
+2. リポジトリを開きます。
+   https://github.com/ape36soundscape/saruwatari-pianolessonclass-yokohama
+3. Codex または GitHub 上で内容を編集します。
+4. main ブランチへ保存（コミット）すると、GitHub Pages が自動で再公開します。
+5. 数分後、公開URLをスマートフォンなどで再読み込みして確認します。
+
+■ 注意事項
+・Firebase URLではなく、GitHub Pages URLを案内・QRコードに使用してください。
+・GitHubリポジトリが公開設定の場合、ソースコード自体も閲覧できます。
+・公開サイトに反映されない場合は、ブラウザを再読み込みするか、URLの末尾に ?v=日付 などを付けて開くと確認しやすくなります。
+
