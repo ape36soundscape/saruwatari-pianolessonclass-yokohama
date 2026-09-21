@@ -4,7 +4,6 @@ const lessonFacts = [
   {
     label: "対象",
     value: "年中〜大人",
-    note: "年中のお子さま／小・中・高校生／大学生・大人",
   },
   { label: "回数", value: "月3〜4回" },
   { label: "月謝", value: "6,000〜8,000円" },
@@ -152,7 +151,6 @@ export default function Home() {
             <article className="fact-card" key={fact.label}>
               <span>{fact.label}</span>
               <strong>{fact.value}</strong>
-              {fact.note && <small>{fact.note}</small>}
             </article>
           ))}
         </div>
