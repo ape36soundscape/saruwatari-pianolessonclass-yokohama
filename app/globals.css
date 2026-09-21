@@ -288,9 +288,19 @@ nav a:hover {
 }
 
 .note {
+  appearance: none;
+  background: transparent;
+  border: 0;
   color: var(--rose);
+  cursor: pointer;
   font-family: serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
   position: absolute;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 .note-one {
@@ -305,6 +315,41 @@ nav a:hover {
   font-size: 3.5rem;
   right: 12%;
   transform: rotate(12deg);
+}
+
+.note:focus-visible {
+  outline: 3px solid var(--rose);
+  outline-offset: 5px;
+}
+
+@keyframes note-wiggle-one {
+  0%, 100% { transform: rotate(-14deg) scale(1); }
+  25% { transform: rotate(-25deg) scale(1.08); }
+  55% { transform: rotate(-5deg) scale(1.08); }
+  80% { transform: rotate(-19deg) scale(1.04); }
+}
+
+@keyframes note-wiggle-two {
+  0%, 100% { transform: rotate(12deg) scale(1); }
+  25% { transform: rotate(1deg) scale(1.08); }
+  55% { transform: rotate(21deg) scale(1.08); }
+  80% { transform: rotate(7deg) scale(1.04); }
+}
+
+.note-one:hover {
+  animation: note-wiggle-one 480ms ease-in-out;
+}
+
+.note-two:hover {
+  animation: note-wiggle-two 480ms ease-in-out;
+}
+
+.note-one.is-wiggling {
+  animation: note-wiggle-one 560ms ease-in-out;
+}
+
+.note-two.is-wiggling {
+  animation: note-wiggle-two 560ms ease-in-out;
 }
 
 .piano {
@@ -956,12 +1001,26 @@ footer p {
   }
 
   .music-card {
-    height: 230px;
-    width: 250px;
+    height: clamp(198px, 58vw, 230px);
+    width: clamp(215px, 64vw, 250px);
   }
 
   .music-card strong {
-    font-size: 2.8rem;
+    font-size: clamp(2.35rem, 10vw, 2.8rem);
+  }
+
+  .note-one {
+    font-size: clamp(3.2rem, 14vw, 4rem);
+    left: 4.5vw;
+    top: 11%;
+    z-index: 4;
+  }
+
+  .note-two {
+    bottom: 30%;
+    font-size: clamp(2.55rem, 11vw, 3.15rem);
+    right: 4.5vw;
+    z-index: 4;
   }
 
   .piano {
@@ -1038,6 +1097,13 @@ footer p {
   *::before,
   *::after {
     transition: none !important;
+  }
+
+  .note-one:hover,
+  .note-two:hover,
+  .note-one.is-wiggling,
+  .note-two.is-wiggling {
+    animation: none !important;
   }
 }
 

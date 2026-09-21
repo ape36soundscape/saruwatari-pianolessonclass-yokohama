@@ -1,3 +1,4 @@
+import InteractiveNote from "./InteractiveNote";
 import PrintButton from "./PrintButton";
 
 const lessonFacts = [
@@ -110,8 +111,8 @@ export default function Home() {
             <strong>無料体験</strong>
             <span>受付中</span>
           </div>
-          <div className="note note-one" aria-hidden="true">♪</div>
-          <div className="note note-two" aria-hidden="true">♩</div>
+          <InteractiveNote symbol="♪" variant="one" />
+          <InteractiveNote symbol="♩" variant="two" />
           <div className="piano">
             {Array.from({ length: 9 }).map((_, index) => (
               <button
