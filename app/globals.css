@@ -517,6 +517,30 @@ nav a:hover {
   text-wrap: balance;
 }
 
+.fact-details {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 15px 0 0;
+}
+
+.fact-details li {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.65;
+  padding-left: 1.1em;
+  position: relative;
+}
+
+.fact-details li::before {
+  color: var(--rose);
+  content: "—";
+  left: 0;
+  position: absolute;
+}
+
 .method-grid {
   display: grid;
   gap: 22px;
@@ -602,7 +626,7 @@ nav a:hover {
 }
 
 .teacher-copy > p:last-child {
-  color: rgba(255, 255, 255, 0.78);
+  color: #fff;
   line-height: 2.1;
 }
 
@@ -901,6 +925,14 @@ footer p {
 
   .intro-copy {
     margin-top: 0;
+  }
+
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fact-card:nth-child(odd) {
+    border-left: 1px solid var(--line);
   }
 
   .teacher-section,

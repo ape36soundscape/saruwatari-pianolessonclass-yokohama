@@ -7,7 +7,15 @@ const lessonFacts = [
     value: "年中〜大人",
   },
   { label: "回数", value: "月3〜4回" },
-  { label: "月謝", value: "6,000〜8,000円" },
+  {
+    label: "月謝",
+    value: "6,000〜8,000円",
+    details: [
+      "園児（30分）：月3回 6,000円／月4回 7,000円",
+      "小学生以上（30〜40分）：月3回 7,000円／月4回 8,000円",
+      "中学生・高校生の月2回レッスンや、その他のご都合にも対応いたします。ご相談ください。",
+    ],
+  },
   { label: "入会金", value: "無料" },
 ];
 
@@ -159,6 +167,13 @@ export default function Home() {
             <article className="fact-card" key={fact.label}>
               <span>{fact.label}</span>
               <strong>{fact.value}</strong>
+              {fact.details && (
+                <ul className="fact-details">
+                  {fact.details.map((detail) => (
+                    <li key={detail}>{detail}</li>
+                  ))}
+                </ul>
+              )}
             </article>
           ))}
         </div>
@@ -203,8 +218,9 @@ export default function Home() {
           <p className="teacher-credential">国立音楽大学 音楽教育学科 卒業</p>
           <p>
             音楽は、できるようになる過程にもたくさんの楽しさがあります。
-            一人ひとりの個性とペースを大切に、安心して通えるレッスンを心がけています。
-            まずは無料体験で、教室の音にふれてみてください。
+            幼児の方から大人の方まで、ピアノを習う目的はそれぞれ違うかもしれませんが、
+            「ピアノを楽しく弾きたい」という思いを一緒に叶えるお手伝いをさせていただきます。
+            そんな中で一人ひとりの個性とペースを大切に、安心して通えるレッスンを心がけています。
           </p>
         </div>
       </section>
