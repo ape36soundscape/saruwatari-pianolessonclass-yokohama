@@ -114,13 +114,20 @@ export default function Home() {
           <div className="note note-two" aria-hidden="true">♩</div>
           <div className="piano">
             {Array.from({ length: 9 }).map((_, index) => (
-              <span className="white-key" key={index} />
+              <button
+                aria-label={`白鍵 ${index + 1}`}
+                className="white-key"
+                key={index}
+                type="button"
+              />
             ))}
-            {[1, 2, 4, 5, 6, 8].map((position) => (
-              <span
+            {[1, 2, 4, 5, 6, 8].map((position, index) => (
+              <button
+                aria-label={`黒鍵 ${index + 1}`}
                 className="black-key"
-                style={{ left: `${position * 11.11 - 3.5}%` }}
                 key={position}
+                style={{ left: `${position * 11.11 - 3.5}%` }}
+                type="button"
               />
             ))}
           </div>
