@@ -3,8 +3,8 @@ import PrintButton from "./PrintButton";
 const lessonFacts = [
   {
     label: "対象",
-    value: "園児〜大学生",
-    note: "幼稚園・保育園／小・中・高校生／大学生　そのほかもご相談ください",
+    value: "年中〜大人",
+    note: "年中のお子さま／小・中・高校生／大学生・大人",
   },
   { label: "回数", value: "月3〜4回" },
   { label: "月謝", value: "6,000〜8,000円" },
@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "ピアノが初めてでも大丈夫ですか？",
     answer:
-      "もちろんです。幼稚園・保育園、小学生、中学生、高校生、大学生まで、一人ひとりの経験やペースに合わせてレッスンします。そのほかの方も、ご希望を伺いながら一緒に考えますので、どうぞ気軽にご相談ください。",
+      "もちろんです。年中のお子さまから大人の方まで、一人ひとりの経験やペースに合わせてレッスンします。どうぞ気軽にご相談ください。",
   },
   {
     question: "体験レッスンに費用はかかりますか？",
@@ -26,6 +26,16 @@ const faqs = [
     question: "レッスンの曜日や時間は選べますか？",
     answer:
       "空き状況によりご案内します。ご希望の曜日・時間を、お電話またはショートメールでお知らせください。",
+  },
+  {
+    question: "発表会はありますか？",
+    answer:
+      "年に一度あります。ソロ曲と連弾曲を演奏します。連弾曲では、生徒さんのお気に入りの曲を弾いたり、ご家族と連弾をしたりと、良い思い出になります。",
+  },
+  {
+    question: "使用している教材は何ですか？",
+    answer:
+      "主にバーナムとオルガンピアノ、もしくはひけるよジュニアから始めていますが、生徒さんの個性に合わせて柔軟に変更したりしています。リズムや音符の読みの練習では音符ビッツというソルフェージュ学習法を用いて行っています。",
   },
 ];
 
@@ -82,7 +92,7 @@ export default function Home() {
             <span>奏でるたのしさへ。</span>
           </h1>
           <p className="hero-lead">
-            幼稚園・保育園のお子さまから大学生の方まで。
+            年中のお子さまから大人の方まで。
             ピアノと音符ビッツで、一人ひとりの「弾いてみたい」を育てます。
           </p>
           <div className="hero-actions">
@@ -130,7 +140,7 @@ export default function Home() {
         </div>
         <p className="intro-copy">
           <span className="reading-line">はじめて鍵盤にふれるお子さまも、</span>
-          <span className="reading-line">音楽をもっと楽しみたい学生の方も。</span>
+          <span className="reading-line">音楽をもっと楽しみたい大人の方も。</span>
           <span className="reading-line">基礎を大切にしながら、毎回の小さな</span>
           <span className="reading-line">「できた」を積み重ねます。</span>
         </p>
@@ -239,10 +249,7 @@ export default function Home() {
             </div>
             <div>
               <dt>対象</dt>
-              <dd>
-                園児〜大学生
-                <small>そのほかの方もご相談ください</small>
-              </dd>
+              <dd>年中〜大人</dd>
             </div>
             <div>
               <dt>体験</dt>

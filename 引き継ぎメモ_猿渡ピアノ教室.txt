@@ -1,5 +1,5 @@
 猿渡ピアノ教室　ホームページ引き継ぎメモ
-最終更新：2026年8月29日
+最終更新：2026年9月21日
 
 ■ 公開中のホームページ
 https://ape36soundscape.github.io/saruwatari-pianolessonclass-yokohama/
@@ -16,6 +16,8 @@ https://ape36soundscape.github.io/saruwatari-pianolessonclass-yokohama/
 ・教室名：猿渡ピアノ教室
 ・学歴表記：国立音楽大学 音楽教育学科 卒業
 ・月謝表記：6,000〜8,000円
+・対象表記：年中〜大人
+・よくある質問：発表会と使用教材の案内を追加
 ・フッター表記：© 2026 Saruwatari Piano Class
 
 ■ Firebase について
